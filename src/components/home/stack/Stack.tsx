@@ -5,7 +5,7 @@ import { stackData } from "./data";
 
 export const Stack = () => {
    return (
-      <div className={styles["stack"]}>
+      <div className={`${styles["stack"]} ${globalStyles["wrapper"]}`}>
          <h3 className={globalStyles["section-title"]}>Tools</h3>
          <hr className={globalStyles["sep"]} />
          <div className={styles["stack-cont"]}>

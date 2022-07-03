@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import globalStyles from "../../global.module.scss";
 import profileImg from "../../imgs/profile-img.jpg";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
@@ -7,7 +8,7 @@ import { SiInstagram } from "react-icons/si";
 export const Header = () => {
    return (
       <>
-         <div className={styles["header"]}>
+         <div className={`${styles["header"]} ${globalStyles["wrapper"]}`}>
             <div className={styles["social-cont"]}>
                <a target="_blank" href="https://www.instagram.com/luisropev/">
                   <SiInstagram className={styles["icon"]} />

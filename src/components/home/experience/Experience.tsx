@@ -6,7 +6,7 @@ import { experienceItem } from "./data";
 
 export const Experience = () => {
    return (
-      <div className={styles["experiences"]}>
+      <div className={`${styles["experiences"]} ${globalStyles["wrapper"]}`}>
          <h2 className={globalStyles["section-title"]}>Experience</h2>
          <hr className={globalStyles["sep"]} />
 
