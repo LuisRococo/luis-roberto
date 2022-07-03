@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/luis-super-page/static/css/main.073c9b0a.css",
-    "main.js": "/luis-super-page/static/js/main.8b58cbe2.js",
+    "main.css": "/luis-super-page/static/css/main.6552b6c2.css",
+    "main.js": "/luis-super-page/static/js/main.1ad2bbc3.js",
     "static/js/787.3f12b736.chunk.js": "/luis-super-page/static/js/787.3f12b736.chunk.js",
+    "static/media/profile-img.jpg": "/luis-super-page/static/media/profile-img.319176d5ad8810769056.jpg",
     "index.html": "/luis-super-page/index.html",
-    "main.073c9b0a.css.map": "/luis-super-page/static/css/main.073c9b0a.css.map",
-    "main.8b58cbe2.js.map": "/luis-super-page/static/js/main.8b58cbe2.js.map",
+    "main.6552b6c2.css.map": "/luis-super-page/static/css/main.6552b6c2.css.map",
+    "main.1ad2bbc3.js.map": "/luis-super-page/static/js/main.1ad2bbc3.js.map",
     "787.3f12b736.chunk.js.map": "/luis-super-page/static/js/787.3f12b736.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8b58cbe2.js"
+    "static/css/main.6552b6c2.css",
+    "static/js/main.1ad2bbc3.js"
   ]
 }
