@@ -1,0 +1,53 @@
+.stack {
+    background-color: rgb(229, 229, 229);
+    padding: 70px 20px;
+    text-align: center;
+
+    .section-title{
+    }
+
+    .sep {
+        color: rgb(82, 79, 79);
+    }
+
+    .stack-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .stack-element-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 70px;
+            margin: 10px 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            .stack-name{
+                font-size: .7rem;
+                color: rgb(150, 150, 150);
+                font-style: italic;
+                margin-top: 10px;
+            }
+
+            .stack-icon-wrapper{
+                background-color: white;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+
+                .stack-icon {
+                    font-size: 40px;
+                    color: var(--main-text-color);
+                }
+            }
+        }
+    }
+}

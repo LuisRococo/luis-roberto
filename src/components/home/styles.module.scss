@@ -1,0 +1,47 @@
+.header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    background-image: url("https://www.wallpaperuse.com/wallp/45-459242_m.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .profile-info-cont {
+        margin-bottom: 20px;
+
+        .profile-img {
+            width: 200px;
+            border-radius: 100%;
+            border-style: solid;
+            border-width: 7px;
+            border-color: white;
+        }
+
+        .name  {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .career {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    }
+
+    .social-cont {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 20px 0 40px;
+
+        .icon {
+            font-size: 25px;
+            margin: 0 7px;
+            color: white;
+        }
+    }
+}

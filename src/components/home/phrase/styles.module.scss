@@ -1,0 +1,15 @@
+.phrase-cont {
+    text-align: center;
+    color: white;
+//    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzkNeWB0se6TEqIufSfn2P_d5_FvtmbCufA&usqp=CAU");
+   background-position: center;
+   background-size: cover;
+   background-color: rgb(38, 38, 38);
+   padding: 30px 10px;
+
+    .phrase {
+        font-size: 1.1rem;
+        font-style: italic;
+        line-height: 1.7;
+    }
+}

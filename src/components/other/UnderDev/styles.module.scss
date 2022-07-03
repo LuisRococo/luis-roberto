@@ -1,0 +1,28 @@
+.section {
+    padding: 60px 10px;
+
+    .card {
+        background-color: white;
+        -webkit-box-shadow: 7px 12px 24px 5px rgba(63,63,63,0.46); 
+        box-shadow: 7px 12px 24px 5px rgba(63,63,63,0.46);
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .icon  {
+            font-size: 4rem;
+            display: block;
+            color: var(--main-text-color);
+            margin-right: 20px;
+        }
+
+        .title {
+            font-size: 2rem;
+            color: var(--main-text-color);
+        }
+
+    }
+}

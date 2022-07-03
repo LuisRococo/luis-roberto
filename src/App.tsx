@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { Home } from "./pages/Home";
+import "./global.module.scss";
 
 function App() {
-   return <p>HOLA MUNDO</p>;
+   return <Home />;
 }
 
 export default App;

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #C90300;
+    --second-color: #F63C70;
+
+    --main-bg-color: rgb(255, 255, 255);
+    --second-bg-color: rgb(222, 222, 222);
+
+    --main-text-color: rgb(72, 72, 72);
+    --title-text-color: rgb(71, 71, 71);
+    --text-color-light: rgb(235, 235, 235);
+}
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.sep {
+    border-style: none;
+    border-top-style: solid;
+    border-color: #7d7d7d;
+    border-width: 1px;
+    margin: 30px 0;
+}
