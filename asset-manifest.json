@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/luis-super-page/static/css/main.6552b6c2.css",
-    "main.js": "/luis-super-page/static/js/main.1ad2bbc3.js",
-    "static/js/787.3f12b736.chunk.js": "/luis-super-page/static/js/787.3f12b736.chunk.js",
-    "static/media/profile-img.jpg": "/luis-super-page/static/media/profile-img.319176d5ad8810769056.jpg",
-    "index.html": "/luis-super-page/index.html",
-    "main.6552b6c2.css.map": "/luis-super-page/static/css/main.6552b6c2.css.map",
-    "main.1ad2bbc3.js.map": "/luis-super-page/static/js/main.1ad2bbc3.js.map",
-    "787.3f12b736.chunk.js.map": "/luis-super-page/static/js/787.3f12b736.chunk.js.map"
+    "main.css": "/luis-roberto/static/css/main.6552b6c2.css",
+    "main.js": "/luis-roberto/static/js/main.7c00a736.js",
+    "static/js/787.3f12b736.chunk.js": "/luis-roberto/static/js/787.3f12b736.chunk.js",
+    "static/media/profile-img.jpg": "/luis-roberto/static/media/profile-img.319176d5ad8810769056.jpg",
+    "index.html": "/luis-roberto/index.html",
+    "main.6552b6c2.css.map": "/luis-roberto/static/css/main.6552b6c2.css.map",
+    "main.7c00a736.js.map": "/luis-roberto/static/js/main.7c00a736.js.map",
+    "787.3f12b736.chunk.js.map": "/luis-roberto/static/js/787.3f12b736.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6552b6c2.css",
-    "static/js/main.1ad2bbc3.js"
+    "static/js/main.7c00a736.js"
   ]
 }
