@@ -11,14 +11,12 @@ export const Stack = () => {
          <div className={styles["stack-cont"]}>
             {stackData.map((data, key) => {
                return (
-                  <>
-                     <div className={styles["stack-element-wrapper"]}>
-                        <div className={styles["stack-icon-wrapper"]}>
-                           <data.Icon className={styles["stack-icon"]} />
-                        </div>
-                        <p className={styles["stack-name"]}>{data.name}</p>
+                  <div key={`stack-item-${key}`} className={styles["stack-element-wrapper"]}>
+                     <div className={styles["stack-icon-wrapper"]}>
+                        <data.Icon className={styles["stack-icon"]} />
                      </div>
-                  </>
+                     <p className={styles["stack-name"]}>{data.name}</p>
+                  </div>
                );
             })}
          </div>
