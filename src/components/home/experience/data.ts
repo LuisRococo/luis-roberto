@@ -1,4 +1,5 @@
 import enrouteIcon from "../../../imgs/enroute-icon.jpeg";
+import questionMarkImg from "../../../imgs/question-mark.png";
 
 export interface ExperienceItemInterface {
    image: string;
@@ -18,6 +19,6 @@ export const experienceItem: ExperienceItemInterface[] = [
       company: "More to come...",
       date: "? - ?",
       position: "Mystery",
-      image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Circle_question_mark.png",
+      image: questionMarkImg,
    },
 ];
