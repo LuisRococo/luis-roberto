@@ -16,9 +16,9 @@ export const experienceItem: ExperienceItemInterface[] = [
       image: enrouteIcon,
    },
    {
-      company: "More to come...",
+      company: "",
       date: "? - ?",
-      position: "Mystery",
+      position: "",
       image: questionMarkImg,
    },
 ];
