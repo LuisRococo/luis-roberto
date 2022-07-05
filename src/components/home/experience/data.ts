@@ -14,4 +14,10 @@ export const experienceItem: ExperienceItemInterface[] = [
       position: "Full-Stack developer",
       image: enrouteIcon,
    },
+   {
+      company: "More to come...",
+      date: "? - ?",
+      position: "Mystery",
+      image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Circle_question_mark.png",
+   },
 ];

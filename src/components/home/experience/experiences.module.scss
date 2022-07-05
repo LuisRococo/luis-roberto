@@ -7,12 +7,12 @@
     .items-cont {
 
         display: flex;
-        justify-content: center;
+        flex-direction: column;
 
         .item {
-            width: 500px;
-            min-width: 200px;
+            width: 100%;
             text-align: left;
+            margin-bottom: 10px;
     
             .item-date {
                 color: rgb(135, 135, 135);
@@ -51,5 +51,18 @@
     
         }
         
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .main-content.main-content {
+        display: flex;
+        flex-direction: column;
     }
 }
