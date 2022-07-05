@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/luis-roberto/static/css/main.2ee026e4.css",
-    "main.js": "/luis-roberto/static/js/main.f5018973.js",
+    "main.css": "/luis-roberto/static/css/main.efe322ac.css",
+    "main.js": "/luis-roberto/static/js/main.719ad7cc.js",
     "static/js/787.3f12b736.chunk.js": "/luis-roberto/static/js/787.3f12b736.chunk.js",
     "static/media/red-bg.jpeg": "/luis-roberto/static/media/red-bg.6f3a516209c07ffeba03.jpeg",
+    "static/media/hackerman-1.png": "/luis-roberto/static/media/hackerman-1.f572a882022fb3ebc8fc.png",
     "static/media/profile-img.jpg": "/luis-roberto/static/media/profile-img.319176d5ad8810769056.jpg",
     "static/media/star.png": "/luis-roberto/static/media/star.75498aa6a311bb56709c.png",
     "index.html": "/luis-roberto/index.html",
-    "main.2ee026e4.css.map": "/luis-roberto/static/css/main.2ee026e4.css.map",
-    "main.f5018973.js.map": "/luis-roberto/static/js/main.f5018973.js.map",
+    "main.efe322ac.css.map": "/luis-roberto/static/css/main.efe322ac.css.map",
+    "main.719ad7cc.js.map": "/luis-roberto/static/js/main.719ad7cc.js.map",
     "787.3f12b736.chunk.js.map": "/luis-roberto/static/js/787.3f12b736.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ee026e4.css",
-    "static/js/main.f5018973.js"
+    "static/css/main.efe322ac.css",
+    "static/js/main.719ad7cc.js"
   ]
 }
