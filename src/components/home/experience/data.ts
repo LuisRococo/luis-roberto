@@ -15,10 +15,4 @@ export const experienceItem: ExperienceItemInterface[] = [
       position: "Full-Stack developer",
       image: enrouteIcon,
    },
-   {
-      company: "",
-      date: "? - ?",
-      position: "",
-      image: questionMarkImg,
-   },
 ];

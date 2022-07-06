@@ -13,13 +13,13 @@ export const Footer = () => {
                <img src={starImage} alt="" />
             </div>
          </div>
-         <p className={styles["phrase"]}>keep moving even if the storm is cold and dark. Only like that you will see the sun arise again.</p>
+         <p className={styles["phrase"]}>Don't let the storm stop you comrade</p>
 
          <div className={styles["special-wrapper"]}>
-            <a target="_blank" href="https://www.youtube.com/watch?v=t0DeJ5HeG8o">
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                <div className={styles["special"]}>
                   <FaHandPointRight className={styles["icon"]} />
-                  <p className={styles["special-text"]}>I want you to know that ...</p>
+                  <p className={styles["special-text"]}>Click to see something special</p>
                </div>
             </a>
          </div>
