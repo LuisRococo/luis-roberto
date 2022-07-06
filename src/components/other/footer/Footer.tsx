@@ -13,7 +13,7 @@ export const Footer = () => {
                <img src={starImage} alt="" />
             </div>
          </div>
-         <p className={styles["phrase"]}>Don't let the storm stop you comrade</p>
+         <p className={styles["phrase"]}>Don't let the storm stop you comrade !</p>
 
          <div className={styles["special-wrapper"]}>
             <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
