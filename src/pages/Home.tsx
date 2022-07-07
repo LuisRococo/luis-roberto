@@ -1,4 +1,5 @@
 import React from "react";
+import { AboutMe } from "../components/home/aboutMe/AboutMe";
 import { Experience } from "../components/home/experience/Experience";
 import { Header } from "../components/home/Header";
 import { Phrase } from "../components/home/phrase/Phrase";
@@ -10,6 +11,7 @@ export const Home = () => {
       <div>
          <Header />
          <Stack />
+         <AboutMe />
          <Experience />
          <UnderDevMsj />
          {/* <Phrase /> */}

@@ -1,0 +1,28 @@
+.likes {
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 30px;
+
+    .title {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .item {
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+
+        .text {
+            font-size: 1.2rem;
+        }
+
+        .icon {
+            margin-right: 20px;
+            font-size: 2.2rem;
+            color: var(--main-color);
+        }
+    }
+}
