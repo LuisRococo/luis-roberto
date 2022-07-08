@@ -14,15 +14,20 @@
         display: flex;
         margin: 20px 0;
         align-items: center;
+        text-overflow: ellipsis;
 
         .text {
             font-size: 1.2rem;
         }
 
-        .icon {
-            margin-right: 20px;
-            font-size: 2.2rem;
-            color: var(--main-color);
+        .icon-wrapper {
+            width: 40px;
+
+            .icon {
+                margin-right: 20px;
+                font-size: 2.2rem;
+                color: var(--main-color);
+            }
         }
     }
 }

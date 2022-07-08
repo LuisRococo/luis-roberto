@@ -13,7 +13,9 @@ export const Likes = () => {
          {itemData.map((item, key) => {
             return (
                <div key={`likes-item-${key}`} className={styles["item"]}>
-                  <BsFillBookmarkHeartFill className={styles["icon"]} />
+                  <div className={styles["icon-wrapper"]}>
+                     <BsFillBookmarkHeartFill className={styles["icon"]} />
+                  </div>
                   <p className={styles["text"]}>{item}</p>
                </div>
             );
