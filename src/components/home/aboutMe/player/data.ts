@@ -29,17 +29,17 @@ export const songs: SongsInterface[] = [
    {
       song: { artist: "Kungs", image: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.jpeg", song: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.mp3", name: "This Girl" },
       style: {
-         artistColor: "#fff",
+         artistColor: "#444",
          background: "#ffc4d3",
-         titleColor: "#fff",
+         titleColor: "#000",
       },
    },
    {
       song: { artist: "Robin Schulz", image: process.env.PUBLIC_URL + "/songs/sugar/sugar.webp", song: process.env.PUBLIC_URL + "/songs/sugar/sugar.mp3", name: "Sugar" },
       style: {
-         artistColor: "#f22e3e",
+         artistColor: "#444",
          background: "#fff9e6",
-         titleColor: "#f22e3e",
+         titleColor: "#000",
       },
    },
 ];

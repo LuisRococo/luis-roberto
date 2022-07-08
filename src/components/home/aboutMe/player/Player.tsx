@@ -49,9 +49,8 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
 
    useEffect(() => {
       const audioElement = audioHeart.current;
-      audioElement?.pause();
       audioElement?.load();
-      if (!isSleeping) {
+      if (!isSleeping && isPlaying) {
          audioElement?.play();
          setIsPlaying(true);
       }
