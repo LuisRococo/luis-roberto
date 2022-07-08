@@ -27,18 +27,28 @@ export const actualSongPlaceHolder: PlayerSongInterface = {
 //Data
 export const songs: SongsInterface[] = [
    {
-      song: { artist: "Kungs", image: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.jpeg", song: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.mp3", name: "This Girl" },
+      song: {
+         artist: "Kungs",
+         image: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.jpeg",
+         song: process.env.PUBLIC_URL + "/songs/this-girl/this-girl.mp3",
+         name: "This Girl",
+      },
       style: {
-         artistColor: "#444",
-         background: "#ffc4d3",
+         artistColor: "#000",
+         background: "#fff",
          titleColor: "#000",
       },
    },
    {
-      song: { artist: "Robin Schulz", image: process.env.PUBLIC_URL + "/songs/sugar/sugar.webp", song: process.env.PUBLIC_URL + "/songs/sugar/sugar.mp3", name: "Sugar" },
+      song: {
+         artist: "Robin Schulz",
+         image: process.env.PUBLIC_URL + "/songs/sugar/sugar.webp",
+         song: process.env.PUBLIC_URL + "/songs/sugar/sugar.mp3",
+         name: "Sugar",
+      },
       style: {
          artistColor: "#444",
-         background: "#fff9e6",
+         background: "#FFF6E7",
          titleColor: "#000",
       },
    },
