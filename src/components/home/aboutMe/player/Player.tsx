@@ -71,7 +71,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
             </p>
          </div>
          <div className={styles["img-wrapper"]}>
-            <img className={`${styles["img"]} ${shouldShowRotateAnim() ? styles["rotate-anim"] : ""} `} src={actualSong?.image} alt="" />
+            <img className={`${styles["img"]} ${styles["rotate-anim"]}`} style={shouldCoverBePaused() ? { animationPlayState: "paused" } : {}} src={actualSong?.image} alt="" />
          </div>
 
          <div className={styles["control-cont"]}>
