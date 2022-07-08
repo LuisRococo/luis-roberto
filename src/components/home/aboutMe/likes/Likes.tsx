@@ -7,7 +7,7 @@ import { itemData } from "./data";
 export const Likes = () => {
    return (
       <div className={styles["likes"]}>
-         <h3 className={styles["title"]}>Thing I like</h3>
+         <h3 className={styles["title"]}>Things I like</h3>
          <hr className={globalStyles["sep"]} />
 
          {itemData.map((item, key) => {

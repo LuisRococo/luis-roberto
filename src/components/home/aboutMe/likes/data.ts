@@ -3,6 +3,6 @@ export const itemData: string[] = [
    "Learn new technologies",
    "Kill the time listening to music",
    "Create software Solutions",
-   "Develope front-end products",
+   "Develop front-end products",
    "Improve myself",
 ];
