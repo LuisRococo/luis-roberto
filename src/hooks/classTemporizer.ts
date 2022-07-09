@@ -10,6 +10,8 @@ export const useClassTemporizer = (element: HTMLElement, time: number, classlist
          timeToReset = time;
       }
 
+      if (timeOutReset) clearTimeout(timeOutReset);
+
       classlist.forEach((className) => {
          if (removeAdd) {
             element.classList.remove(className);
