@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const useClassTemporizer = (element: HTMLElement, time: number, classlist: string[]) => {
+export const useClassTemporizer = (element: HTMLElement, time: number, classlist: string[], removeAdd: boolean = true) => {
    let timeOutReset: NodeJS.Timeout | null = null;
 
    const startTemporizer = (timeToReset?: number) => {
@@ -11,7 +11,11 @@ export const useClassTemporizer = (element: HTMLElement, time: number, classlist
       }
 
       classlist.forEach((className) => {
-         element.classList.remove(className);
+         if (removeAdd) {
+            element.classList.remove(className);
+         } else {
+            element.classList.add(className);
+         }
       });
 
       timeOutReset = setTimeout(onTimeReset, timeToReset);
@@ -19,7 +23,11 @@ export const useClassTemporizer = (element: HTMLElement, time: number, classlist
 
    const onTimeReset = () => {
       classlist.forEach((className) => {
-         element.classList.add(className);
+         if (removeAdd) {
+            element.classList.add(className);
+         } else {
+            element.classList.remove(className);
+         }
       });
    };
 

@@ -20,6 +20,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
    const [isSleeping, setIsSleeping] = useState(true);
    const [isPlaying, setIsPlaying] = useState(false);
    const resetCoverAnimation = useClassTemporizer(songCover.current, 200, [styles["rotate-anim"]]);
+   const fadeInCover = useClassTemporizer(songCover.current, 200, [styles["opacity-0"]], false);
    const volume = 0.7;
 
    function onSongEnd() {
@@ -54,6 +55,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
       const audioElement = audioHeart.current;
       audioElement?.load();
       resetCoverAnimation();
+      fadeInCover();
       if (!isSleeping && isPlaying) {
          audioElement?.play();
          setIsPlaying(true);
