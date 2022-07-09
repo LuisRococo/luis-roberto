@@ -54,7 +54,6 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
       const audioElement = audioHeart.current;
       audioElement?.load();
       resetCoverAnimation();
-      fadeInCover();
       if (!isSleeping && isPlaying) {
          audioElement?.play();
          setIsPlaying(true);
