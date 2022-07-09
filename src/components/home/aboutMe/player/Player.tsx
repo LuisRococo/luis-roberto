@@ -5,6 +5,7 @@ import globalStyles from "../../../../global.module.scss";
 import "react-h5-audio-player/src/styles.scss";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { MdSkipNext, MdSkipPrevious } from "react-icons/md";
+import { useClassTemporizer } from "../../../../hooks/classTemporizer";
 
 interface PlayerInterface {
    onReturn?: () => void;
@@ -15,8 +16,10 @@ interface PlayerInterface {
 
 export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, style }) => {
    const audioHeart = useRef<HTMLAudioElement>(null);
+   const songCover = useRef<any>(null);
    const [isSleeping, setIsSleeping] = useState(true);
    const [isPlaying, setIsPlaying] = useState(false);
+   const resetCoverAnimation = useClassTemporizer(songCover.current, 200, [styles["rotate-anim"]]);
    const volume = 0.7;
 
    function onSongEnd() {
@@ -37,10 +40,6 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
       return isPlaying || isSleeping;
    }
 
-   function shouldShowRotateAnim() {
-      return isPlaying && !isSleeping;
-   }
-
    function shouldCoverBePaused() {
       return !isPlaying;
    }
@@ -54,6 +53,8 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
    useEffect(() => {
       const audioElement = audioHeart.current;
       audioElement?.load();
+      resetCoverAnimation();
+      fadeInCover();
       if (!isSleeping && isPlaying) {
          audioElement?.play();
          setIsPlaying(true);
@@ -75,6 +76,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
          </div>
          <div className={styles["img-wrapper"]}>
             <img
+               ref={songCover}
                className={`${styles["img"]} ${styles["rotate-anim"]}`}
                style={shouldCoverBePaused() ? { animationPlayState: "paused" } : {}}
                src={actualSong?.image}

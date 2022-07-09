@@ -38,6 +38,7 @@
             object-fit: cover;
             object-position: center;
             box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.48);
+            transition: opacity 1s;
             -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.48);
             -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.48);
         }
@@ -83,6 +84,10 @@
 
   .rotate-anim {
     animation: rotation 20s infinite linear;
+  }
+
+  .opacity-0 {
+    opacity: 0;
   }
 
   .hidden {
