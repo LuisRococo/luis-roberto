@@ -47,8 +47,8 @@ export const songs: SongsInterface[] = [
          name: "Sugar",
       },
       style: {
-         artistColor: "#444",
-         background: "#FFF6E7",
+         artistColor: "#000",
+         background: "#fff",
          titleColor: "#000",
       },
    },

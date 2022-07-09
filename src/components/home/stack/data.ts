@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { BsGithub } from "react-icons/bs";
-import { FaReact } from "react-icons/fa";
+import { FaDocker, FaReact } from "react-icons/fa";
 import { SiHtml5, SiJavascript, SiMongodb, SiNodedotjs, SiSass, SiTypescript, SiVisualstudio } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
@@ -22,4 +22,5 @@ export const stackData: StackElementInterface[] = [
    { Icon: SiHtml5, name: "HTML / CSS" },
    { Icon: SiVisualstudio, name: "VS Code" },
    { Icon: AiFillGithub, name: "Github / Git" },
+   { Icon: FaDocker, name: "Docker" },
 ];

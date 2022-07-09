@@ -17,7 +17,11 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
    const audioHeart = useRef<HTMLAudioElement>(null);
    const [isSleeping, setIsSleeping] = useState(true);
    const [isPlaying, setIsPlaying] = useState(false);
-   const volume = 0.5;
+   const volume = 0.7;
+
+   function onSongEnd() {
+      setIsPlaying(false);
+   }
 
    function playSong() {
       if (isPlaying) {
@@ -58,7 +62,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
 
    return (
       <div className={styles["player"]} style={style ? { backgroundColor: style.background } : {}}>
-         <audio ref={audioHeart} className={styles["hidden"]} controls>
+         <audio onEnded={onSongEnd} ref={audioHeart} className={styles["hidden"]} controls>
             <source src={actualSong?.song} />
          </audio>
          <div className={styles["header"]}>
@@ -70,7 +74,12 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
             </p>
          </div>
          <div className={styles["img-wrapper"]}>
-            <img className={`${styles["img"]} ${styles["rotate-anim"]}`} style={shouldCoverBePaused() ? { animationPlayState: "paused" } : {}} src={actualSong?.image} alt="" />
+            <img
+               className={`${styles["img"]} ${styles["rotate-anim"]}`}
+               style={shouldCoverBePaused() ? { animationPlayState: "paused" } : {}}
+               src={actualSong?.image}
+               alt=""
+            />
          </div>
 
          <div className={styles["control-cont"]}>
