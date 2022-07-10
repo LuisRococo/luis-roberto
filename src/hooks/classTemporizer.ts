@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 
-export const useClassTemporizer = (element: HTMLElement, time: number, classlist: string[], removeAdd: boolean = true) => {
+export const useClassTemporizer = (element: HTMLElement, time: number, classlist: string[], reAddClassMode: boolean = true) => {
    let timeOutReset: NodeJS.Timeout | null = null;
+
+   const removeClass = (className: string) => {
+      element.classList.remove(className);
+   };
+
+   const addClass = (className: string) => {
+      element.classList.add(className);
+   };
 
    const startTemporizer = (timeToReset?: number) => {
       if (!element) return;
@@ -11,26 +19,17 @@ export const useClassTemporizer = (element: HTMLElement, time: number, classlist
       }
 
       if (timeOutReset) clearTimeout(timeOutReset);
+      const actionToClass = reAddClassMode ? removeClass : addClass;
 
-      classlist.forEach((className) => {
-         if (removeAdd) {
-            element.classList.remove(className);
-         } else {
-            element.classList.add(className);
-         }
-      });
+      classlist.forEach(actionToClass);
 
       timeOutReset = setTimeout(onTimeReset, timeToReset);
    };
 
    const onTimeReset = () => {
-      classlist.forEach((className) => {
-         if (removeAdd) {
-            element.classList.add(className);
-         } else {
-            element.classList.remove(className);
-         }
-      });
+      if (timeOutReset) clearTimeout(timeOutReset);
+      const actionToClass = reAddClassMode ? addClass : removeClass;
+      classlist.forEach(actionToClass);
    };
 
    useEffect(() => {
