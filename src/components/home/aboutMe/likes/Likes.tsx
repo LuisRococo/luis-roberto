@@ -6,20 +6,20 @@ import { itemData } from "./data";
 
 export const Likes = () => {
    return (
-      <div className={styles["likes"]}>
+      <div className={styles["likes-wrapper"]}>
          <h3 className={styles["title"]}>Things I like</h3>
-         <hr className={globalStyles["sep"]} />
-
-         {itemData.map((item, key) => {
-            return (
-               <div key={`likes-item-${key}`} className={styles["item"]}>
-                  <div className={styles["icon-wrapper"]}>
-                     <BsFillBookmarkHeartFill className={styles["icon"]} />
+         <div className={styles["likes"]}>
+            {itemData.map((item, key) => {
+               return (
+                  <div key={`likes-item-${key}`} className={styles["item"]}>
+                     <div className={styles["icon-wrapper"]}>
+                        <BsFillBookmarkHeartFill className={styles["icon"]} />
+                     </div>
+                     <p className={styles["text"]}>{item}</p>
                   </div>
-                  <p className={styles["text"]}>{item}</p>
-               </div>
-            );
-         })}
+               );
+            })}
+         </div>
       </div>
    );
 };
