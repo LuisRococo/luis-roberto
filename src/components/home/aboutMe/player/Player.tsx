@@ -38,7 +38,7 @@ export const Player: FC<PlayerInterface> = ({ actualSong, onNext, onReturn, styl
    }
 
    function shouldShowPlayIcon() {
-      return isPlaying || isSleeping;
+      return !isPlaying || isSleeping;
    }
 
    function shouldCoverBePaused() {
