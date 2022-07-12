@@ -9,12 +9,14 @@ export const AboutMe = () => {
    const [songIndex, setSongIndex] = useState(0);
 
    function nextSong() {
-      const nextIndex: number = Math.min(songIndex + 1, songs.length - 1);
+      let nextIndex: number = songIndex + 1;
+      if (nextIndex >= songs.length) nextIndex = 0;
       setSongIndex(nextIndex);
    }
 
    function previousSong() {
-      const nextIndex: number = Math.max(songIndex - 1, 0);
+      let nextIndex: number = songIndex - 1;
+      if (nextIndex < 0) nextIndex = songs.length - 1;
       setSongIndex(nextIndex);
    }
 
